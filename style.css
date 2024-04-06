@@ -617,7 +617,7 @@ footer {
 
 footer p {
   padding-top: 17px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* MOBILE FOOTER */
@@ -628,7 +628,7 @@ footer p {
   }
 
   footer p, footer a {
-    font-size: .85rem;
+    font-size: .75rem;
   }
 }
 
