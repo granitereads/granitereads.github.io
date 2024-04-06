@@ -14,12 +14,12 @@
 body {
   font-family: "Cinzel", serif;
   /* font-family: Georgia, serif; */
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   background-color: #0c0908;
 }
 
 p {
-  font-size: 2vb;
+  font-size: 1.5rem;
 }
 
 a {
@@ -27,18 +27,18 @@ a {
 }
 
 h1 {
-  font-size: 3.5vb;
+  font-size: 2.6rem;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 2.8vb;
+  font-size: 2.1rem;
   font-weight: 500;
   text-align: center;
 }
 
 h3 {
-  font-size: 2.3vb;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
@@ -47,7 +47,7 @@ ul {
 }
 
 hr {
-  margin: 50px auto 70px auto;
+  margin: 50px auto;
   width: 50%;
 }
 
@@ -67,7 +67,7 @@ hr {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.75vb;
+  font-size: 1.3rem;
 }
 
 .navLeft {
@@ -86,7 +86,7 @@ hr {
 }
 
 .navCentered a {
-  font-size: 26px;
+  font-size: 1.8rem;
 }
 
 .navRight {
@@ -126,14 +126,14 @@ li {
 }
 
 li a {
-  font-size: 1.9vb !important;
+  font-size: 1.4rem !important;
   display: block;
   text-align: center;
   padding: 10px 3vw !important;
 }
 
 .mobileNav a {
-  font-size: 2.1vb;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -174,12 +174,13 @@ li a {
 }
 
 .indexMenu h1 {
-  font-size: 6vb;
+  font-size: 3.5rem;
   font-family: "Cinzel", serif;
   font-weight: 400;
 }
 
-.indexMenu h3 {
+.indexMenu h2 {
+  font-size: 2rem;
   padding-top: 5px;
   text-align: center;
   font-family: "Cinzel", serif;
@@ -190,7 +191,7 @@ li a {
   text-align: right;
   line-height: 2;
   border-right: 1px solid #fdfefc;
-  font-size: 2.3vb;
+  font-size: 1.7rem;
 }
 
 .indexMenuLinks a {
@@ -228,11 +229,18 @@ li a {
 
   .indexMenu {
     left: 15%;
-    overflow: hidden;
   }
 
   .indexMenu h1 {
-    font-size: 4.5vb;
+    font-size: 2.6rem;
+  }
+
+  .indexMenu h2 {
+    font-size: 1.5rem;
+  }
+
+  .indexMenu a {
+    font-size: 1.2rem;
   }
 
   .indexBackgroundDesktop {
@@ -248,8 +256,16 @@ li a {
   .indexMenu {
     left: 50%;
     transform: translate(-50%, 0);
-    top: 14%;
+    top: 12%;
     min-width: 250px;
+  }
+
+  .indexMenu h1 {
+    font-size: 2.3rem;
+  }
+
+  .indexMenu h2 {
+    font-size: 1.4rem;
   }
 
   .indexBackgroundDesktop {
@@ -261,7 +277,11 @@ li a {
   }
 
   .indexMenuLinks {
-    font-size: 2vb;
+    font-size: 1.2rem;
+  }
+
+  .indexMenuLinks a {
+    font-size: 1rem;
   }
 }
 
@@ -327,29 +347,31 @@ li a {
 
   .portfolioMain h1 {
     margin-top: 50px;
+    font-size: 2rem;
   }
 
   .portfolioImages {
-    padding-top: 0px;
+    padding-top: 25px;
     width: 90%;
+    grid-template-rows: 250px;
     grid-template-columns: auto auto;
   }
 
   .portfolioHeading1 {
-    padding-top: 10px;
-    padding-bottom: 0px !important;
+    padding-bottom: 20px !important;
+    line-height: .8;
   }
 
   .portfolioImages h2{
-    font-size: 2.5vb;
+    font-size: 1.4rem;
   }
 
   .portfolioImages h3{
-    font-size: 2.2vb;
+    font-size: 1.2rem;
   }
 
   .portfolioMain hr {
-    margin: 10px auto 40px auto;
+    margin: 30px auto 40px auto;
   }
 
   .portfolioHeading1, .portfolioHeading2,
@@ -370,8 +392,8 @@ li a {
   }
 
   .portfolioHeading2 {
-    padding-top: 30px;
-    padding-bottom: 30px !important;
+    padding-top: 0px;
+    padding-bottom: 36px !important;
   }
 
   .portfolioTwoColumn {
@@ -427,6 +449,7 @@ li a {
 
   .digitalsMain h1 {
       margin-top: 50px;
+      font-size: 2rem;
   }
 
   .digitalsImages {
@@ -557,8 +580,12 @@ li a {
     overflow: hidden;
   }
 
+  .aboutText h1 {
+    font-size: 2rem;
+  }
+
   .aboutText p {
-    font-size: 1.6vb;
+    font-size: .9rem;
   }
 
   #aboutDesktop {
@@ -573,18 +600,6 @@ li a {
     display: none;
   }
   
-}
-
-@media (max-width: 300px) {
-  .aboutContainer {
-    top: 30px;
-  }
-}
-
-@media (max-width: 300px) {
-  .aboutContainer {
-    top: 30px;
-  }
 }
 
 /* ---FOOTER--- */
@@ -602,7 +617,7 @@ footer {
 
 footer p {
   padding-top: 17px;
-  font-size: 1.6vb;
+  font-size: 1.2rem;
 }
 
 /* MOBILE FOOTER */
@@ -611,5 +626,10 @@ footer p {
   footer {
     margin-top: 20px;
   }
+
+  footer p, footer a {
+    font-size: .85rem;
+  }
 }
+
 
