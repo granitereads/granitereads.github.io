@@ -46,6 +46,11 @@ ul {
   list-style: none;
 }
 
+hr {
+  margin: 50px auto 70px auto;
+  width: 50%;
+}
+
 /*---NAVIGATION---*/
 
 .nav {
@@ -256,6 +261,11 @@ li a {
 
 /* ---PORTFOLIO MAIN--- */
 
+.portfolioMain h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
 .portfolioImages img {
   width: 22vw;
 }
@@ -308,8 +318,12 @@ li a {
 
 @media (max-width: 1000px) {
 
+  .portfolioMain h1 {
+    margin-top: 50px;
+  }
+
   .portfolioImages {
-    padding-top: 10px;
+    padding-top: 0px;
     width: 90%;
     grid-template-columns: auto auto;
   }
@@ -319,15 +333,17 @@ li a {
     padding-bottom: 0px !important;
   }
 
-  .portfolioImages h1{
+  .portfolioImages h2{
     font-size: 2.5vb;
   }
 
-  .portfolioImages h2{
+  .portfolioImages h3{
     font-size: 2.2vb;
   }
 
-
+  .portfolioMain hr {
+    margin: 10px auto 40px auto;
+  }
 
   .portfolioHeading1, .portfolioHeading2,
   .portfolioHorizontal {
@@ -372,6 +388,11 @@ li a {
 
 /* ---DIGITALS--- */
 
+.digitalsMain h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
 .digitalsImages img {
   width: 22vw;
 }
@@ -379,8 +400,7 @@ li a {
 .digitalsImages {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 100px;
-  padding-top: 90px;
+  padding-top: 120px;
   width: 80%;
   margin: auto;
   justify-content: space-evenly;
@@ -394,27 +414,22 @@ li a {
   padding-bottom: 50px;
 }
 
-.digitalsHeading1 {
-  grid-column: 1 / span 3;
-  padding-top: 50px;
-  padding-bottom: 80px !important;
-}
-
 /* DIGITALS MOBILE */
 
 @media (max-width: 1000px) {
-  .digitalsImages, .digitalsHeading1 {
+
+  .digitalsMain h1 {
+      margin-top: 50px;
+  }
+
+  .digitalsImages {
     grid-column: 1 / span 2;
   }
 
   .digitalsImages {
     grid-template-columns: auto auto;
     width: 90%;
-    padding-top: 20px;
-  }
-
-  .digitalsHeading1 {
-    padding: 0 !important;
+    padding-top: 50px;
   }
 
   .digitalsImages img {
@@ -445,10 +460,6 @@ li a {
 }
 
 /* ---ABOUT ME--- */
-
-.aboutBody {
-  overflow: hidden;
-}
 
 .aboutMain {
   height: calc(100vh - 135px);
@@ -515,24 +526,25 @@ li a {
 
 @media (max-width: 1000px) {
   
+  .aboutMain {
+    height: initial;
+  }
+
   .aboutContainer {
     display: initial;
-    top: 80px;
+    position:inherit;
   }
 
   .aboutText {
     width: 85%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 50px auto 0 auto;
   }
 
   .aboutImage {
-    position: fixed;
     bottom: 55px;
     margin-left: auto;
     margin-right: auto;
-    max-height: 40vh;
-    height: 90vw;
+    height: 120vw;
     width: 100vw;
     align-items: end;
     overflow: hidden;
@@ -594,10 +606,3 @@ footer p {
   }
 }
 
-
-
-
-.letter {
-  font-size: 100vb;
-  text-align: center;
-}
