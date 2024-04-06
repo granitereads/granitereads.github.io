@@ -225,8 +225,10 @@ li a {
 /* INDEX MOBILE */
 
 @media (max-width: 1000px) {
+
   .indexMenu {
     left: 15%;
+    overflow: hidden;
   }
 
   .indexMenu h1 {
@@ -239,6 +241,10 @@ li a {
 }
 
 @media (max-width: 700px) {
+  .indexBody {
+    overflow: hidden;
+  }
+
   .indexMenu {
     left: 50%;
     transform: translate(-50%, 0);
