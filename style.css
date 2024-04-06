@@ -126,13 +126,13 @@ li {
 }
 
 li a {
-  font-size: 1.4rem !important;
+  font-size: 1rem !important;
   display: block;
   text-align: center;
   padding: 10px 3vw !important;
 }
 
-.mobileNav a {
+.mobileNav h3 {
   font-size: 1.6rem;
   font-weight: 500;
 }
